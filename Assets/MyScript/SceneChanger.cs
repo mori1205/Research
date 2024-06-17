@@ -18,16 +18,16 @@ public class SceneChanger : MonoBehaviour
     Debug.Log("");
     if (penalty == true || Input.GetKey(KeyCode.Q))
     {
-      SceneManager.LoadScene("A", LoadSceneMode.Single);
+      SceneManager.LoadScene("Penalty", LoadSceneMode.Single);
     }
 
     if (reward == true || Input.GetKey(KeyCode.W))
     {
-      SceneManager.LoadScene("B", LoadSceneMode.Single);
+      SceneManager.LoadScene("Reward", LoadSceneMode.Single);
     }
     if (Obstacle == true || Input.GetKey(KeyCode.E))
     {
-      SceneManager.LoadScene("C", LoadSceneMode.Single);
+      SceneManager.LoadScene("Obstacle", LoadSceneMode.Single);
     }
 
   }

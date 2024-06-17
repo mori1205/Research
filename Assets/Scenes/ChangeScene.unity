@@ -581,7 +581,7 @@ MonoBehaviour:
     Button
 
 
-    Obstacle
+    C
 
 '
 --- !u!222 &945470879
@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Text: 'Center Button
 
 
-    Reward
+    B
 
 '
 --- !u!222 &1535755527
@@ -885,7 +885,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Left \nButton\n\nPenalty"
+  m_Text: "Left \nButton\n\nA"
 --- !u!222 &1804821397
 CanvasRenderer:
   m_ObjectHideFlags: 0
