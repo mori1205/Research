@@ -291,8 +291,9 @@
 
       function eyedetection() { //点眼する
         console.log("-----");
+        console.log("isMoterMoving:", isMoterMoving);
         if (isMoterMoving == false) {
-          // console.log("tenngann");
+          console.log("tenngann");
           motor01.forward();
           motor02.forward();
           isMoterMoving = true;
@@ -316,7 +317,7 @@
         //ここに、Unityから呼び出されてやりたいことを書く。噴射したりとか。
         while(finishLabel == 0) {
           // if (average >= 0.99) {
-            // console.log("eyeditection 前");
+            console.log("eyeditection 前");
             eyedetection();
           // } else {
           //   // console.log("終了前");
