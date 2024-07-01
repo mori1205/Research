@@ -292,18 +292,18 @@
       function eyedetection() { //点眼する
         console.log("-----");
         console.log("isMoterMoving:", isMoterMoving);
-        if (isMoterMoving == false) {
+        // if (isMoterMoving == false) {
           console.log("tenngann");
           motor01.forward();
           motor02.forward();
-          isMoterMoving = true;
+          // isMoterMoving = true;
           setTimeout(function () {
             motor01.stop();
             motor02.stop();
             // webcam.stop();
-            isMoterMoving = false;
+            // isMoterMoving = false;
           }, 1800);
-        }
+        // }
       }
 
       window.addEventListener('message', function(event) {
