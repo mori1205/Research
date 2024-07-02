@@ -39,7 +39,7 @@ public class MistOn : MonoBehaviour
   {
 
 
-    for (int i = 0; i < selectedNumbers.Count; i++)
+    for (int i = 0; i < numbers.Count; i++) //selectNumbers.Count
     {
      
 
