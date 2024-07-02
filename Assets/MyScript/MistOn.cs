@@ -24,7 +24,7 @@ public class MistOn : MonoBehaviour
     numbers = Enumerable.Range(0, 5).ToList();
     selectedNumbers = new List<int>();
 
-    for (int i = 0; i < 3; i++) // 条件式を修正
+    for (int i = 0; i < 2; i++) // 条件式を修正
     {
       int index = Random.Range(0, numbers.Count);
       selectedNumbers.Add(numbers[index]);
@@ -33,31 +33,15 @@ public class MistOn : MonoBehaviour
     }
     selectedNumbers.Sort(); // 数字を小さい順にソート
 
-    // for (int i = 0; i < selectedNumbers.Count; i++)
-    // {
-    //   Debug.Log("selectedNumbers[i]" + selectedNumbers[i]);
-    // }
+
   }
   void OnTriggerEnter(Collider collider)
   {
-    // Debug.Log("Detection");
-    // foreach (int index in selectedNumbers)
-    // {
-    //   if (collider.gameObject.tag == "mist" && index < mistWalls.Count && collider.gameObject == mistWalls[index]) // indexが範囲内かどうかをチェック
-    //   {
-    //     Debug.Log("Detection");
-    //     StartEyeDetection();
-    //   }
-    // }
-    
-    // Debug.Log("mistwall count = " + mistWalls.Count);
 
 
     for (int i = 0; i < selectedNumbers.Count; i++)
     {
-      // Debug.Log("Checking selected number: " + selectedNumbers[i]);
-      // Debug.Log("Player collided with: " + collider.gameObject.name);
-      // Debug.Log("Expected mist wall: " + mistWalls[selectedNumbers[i]].name);
+     
 
       if (collider.gameObject.tag == "Mist" && selectedNumbers[i] < mistWalls.Count && collider.gameObject.name == mistWalls[selectedNumbers[i]].name) // indexが範囲内かどうかをチェック
       //collider.gameObject.tag == "mist" && selectedNumbers[i] < mistWalls.Count && collider.gameObject.GetInstanceID() == mistWalls[selectedNumbers[i]].GetInstanceID()
@@ -69,4 +53,3 @@ public class MistOn : MonoBehaviour
     }
   }
 }
-//  && selectedNumbers[i] < mistWalls.Count && collider.gameObject == mistWalls[selectedNumbers[i]]
