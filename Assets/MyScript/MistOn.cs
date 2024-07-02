@@ -38,7 +38,7 @@ public class MistOn : MonoBehaviour
     //   Debug.Log("selectedNumbers[i]" + selectedNumbers[i]);
     // }
   }
-
+int detectionCount = 0;
   void OnTriggerEnter(Collider collider)
   {
     // Debug.Log("Detection");
@@ -50,7 +50,7 @@ public class MistOn : MonoBehaviour
     //     StartEyeDetection();
     //   }
     // }
-
+    
     // Debug.Log("mistwall count = " + mistWalls.Count);
 
 
@@ -66,9 +66,10 @@ public class MistOn : MonoBehaviour
         Debug.Log(selectedNumbers[i]);
         Debug.Log("Detectiony");
         StartEyeDetection();
+        detectionCount++; // Increment the counter
       }
     }
-
+    Debug.Log("Total detections: " + detectionCount); // Log the total number of detections
   }
 }
 //  && selectedNumbers[i] < mistWalls.Count && collider.gameObject == mistWalls[selectedNumbers[i]]
