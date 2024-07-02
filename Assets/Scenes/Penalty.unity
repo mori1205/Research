@@ -354,6 +354,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1181725346}
     m_Modifications:
+    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1147737159183396278, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
@@ -409,10 +413,6 @@ PrefabInstance:
     - target: {fileID: 8838351154351807264, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_Name
       value: MiniPenalty
-      objectReference: {fileID: 0}
-    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6187107988429984427, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
@@ -569,6 +569,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1404087624}
     m_Modifications:
+    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1147737159183396278, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
@@ -624,10 +628,6 @@ PrefabInstance:
     - target: {fileID: 8838351154351807264, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_Name
       value: MiniPenalty
-      objectReference: {fileID: 0}
-    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6187107988429984427, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
@@ -1086,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPenalty (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -1307,6 +1311,10 @@ PrefabInstance:
     - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_Name
       value: BigPenalty (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
@@ -1530,6 +1538,10 @@ PrefabInstance:
     - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_Name
       value: BigPenalty (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
@@ -2194,6 +2206,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -2203,7 +2219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2600,7 +2616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2612,7 +2628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3231820333810693772, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2663,6 +2679,10 @@ PrefabInstance:
     - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_Name
       value: BigPenalty (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
@@ -3451,6 +3471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigPenalty (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -3848,6 +3872,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1404087624}
     m_Modifications:
+    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1147737159183396278, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_LocalScale.y
       value: 3
@@ -3903,10 +3931,6 @@ PrefabInstance:
     - target: {fileID: 8838351154351807264, guid: 011067de05e9e46339c57188e1f61f25, type: 3}
       propertyPath: m_Name
       value: MiniPenalty (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5620088119285096498, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6187107988429984427, guid: 27bb446e33dc84a4894c0e96a5db6d0e, type: 3}
@@ -4114,6 +4138,10 @@ PrefabInstance:
     - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_Name
       value: BigPenalty (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945070925838345513, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3154162771658246381, guid: 1e02b53053d0645ce90b4bd0fe2760f7, type: 3}
       propertyPath: m_IsTrigger
