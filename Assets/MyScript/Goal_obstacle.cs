@@ -11,7 +11,7 @@ public class Goal_obstacle : MonoBehaviour
   [DllImport("__Internal")]
   private static extern void StartEyeDetection();
 
-  AudioSource audioSource;
+  private AudioSource audioSource;
 
   // private ScoreManeger scoreManeger;
   // private GameObject scoreText;
@@ -32,7 +32,7 @@ public class Goal_obstacle : MonoBehaviour
     // Debug.Log("gooっっっっc");
     if (collision.gameObject.tag == "Player")
     {
-      audioSource.Play();
+      audioSource.PlayOneShot(audioSource.clip);
       goalText.SetActive(true);
 
       // if (scoreManeger.score >= minScore)

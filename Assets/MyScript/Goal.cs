@@ -11,7 +11,7 @@ public class Goal : MonoBehaviour
   [DllImport("__Internal")]
   private static extern void StartEyeDetection();
 
-  AudioSource audioSource;
+  private AudioSource audioSource;
 
   private ScoreManeger scoreManeger;
   private GameObject scoreText;
@@ -29,27 +29,33 @@ public class Goal : MonoBehaviour
   // ぶつかった際に呼ばれるメソッド
   void OnCollisionEnter(Collision collision)
   {
-    // Debug.Log("gooっっっっc");
+
     if (collision.gameObject.tag == "Player")
     {
-      audioSource.Play();
+      audioSource.PlayOneShot(audioSource.clip);
       goalText.SetActive(true);
 
       if (scoreManeger.score >= minScore)
       {
-        StartEyeDetection();
+        StartCoroutine(ExecuteAfterAudio(1.0f));
       }
       // Quit();
     }
-  }
 
-//   void Quit()
-//   {
-//     // isGoal = true;
-// #if UNITY_EDITOR
-//       UnityEditor.EditorApplication.isPlaying = false;
-// #else
-//     Application.Quit();
-// #endif
-//   }
+  }
+  private IEnumerator ExecuteAfterAudio(float delay)
+  {
+    yield return new WaitForSeconds(delay);
+    Debug.Log("StartEye");
+    StartEyeDetection();
+  }
+  //   void Quit()
+  //   {
+  //     // isGoal = true;
+  // #if UNITY_EDITOR
+  //       UnityEditor.EditorApplication.isPlaying = false;
+  // #else
+  //     Application.Quit();
+  // #endif
+  //   }
 }
