@@ -5023,7 +5023,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GOAL!!!
+  m_Text: 'GOAL!!!
+
+    Congratulation!!!!'
 --- !u!222 &1680296192
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6832,9 +6834,9 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0.10360825
+    y: 0.17394671
     width: 1
-    height: 0.7927835
+    height: 0.6521066
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

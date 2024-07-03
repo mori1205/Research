@@ -5152,7 +5152,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: GOAL!!!
+  m_Text: 'GOAL!!!
+
+    Congratulation!!!!'
 --- !u!222 &1285495846
 CanvasRenderer:
   m_ObjectHideFlags: 0
