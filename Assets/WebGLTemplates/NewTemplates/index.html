@@ -190,8 +190,8 @@
         button = obniz.wired("Button", { signal: 0, gnd: 2 });
         motor01 = obniz.wired("DCMotor", { forward: 4, back: 6 });
         motor02 = obniz.wired("DCMotor", { forward: 8, back: 10 });
-        motor01.power(100); // 25
-        motor02.power(100);
+        motor01.power(70); // 25
+        motor02.power(70);
 
         button.onchange = function (pressed) {
           if (pressed) {
