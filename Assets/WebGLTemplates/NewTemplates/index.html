@@ -203,11 +203,11 @@
 
         obniz.switch.onchange = function(state) {
           if (state === "push") {
-            console.log("報酬");
+            // console.log("報酬");
             gameInstance.SendMessage('SceneChanger', 'obstacle_reward');
 
           }else if (state === "left"){
-            console.log("penalty");
+            // console.log("penalty");
             gameInstance.SendMessage('SceneChanger', 'obstacle_penalty');
             
           }else if (state === "right"){
@@ -328,7 +328,7 @@
       function eyedetection() { //点眼する
         console.log("-----");
         if (isMoterMoving == false) {
-          console.log("tenngann");
+          // console.log("tenngann");
           motor01.forward();
           motor02.forward();
           isMoterMoving = true;
@@ -337,6 +337,7 @@
             motor02.stop();
             // webcam.stop();
             isMoterMoving = false;
+            finishLabel = 0;
           }, 1800);
         }
       }

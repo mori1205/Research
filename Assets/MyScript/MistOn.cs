@@ -24,7 +24,7 @@ public class MistOn : MonoBehaviour
     numbers = Enumerable.Range(0, 5).ToList();
     selectedNumbers = new List<int>();
 
-    for (int i = 0; i < 2; i++) // 条件式を修正
+    for (int i = 0; i < 3; i++) // 条件式を修正
     {
       int index = Random.Range(0, numbers.Count);
       selectedNumbers.Add(numbers[index]);
@@ -39,7 +39,7 @@ public class MistOn : MonoBehaviour
   {
 
 
-    for (int i = 0; i < numbers.Count; i++) //selectNumbers.Count
+    for (int i = 0; i < selectedNumbers.Count; i++) //selectNumbers.Count
     {
      
 
